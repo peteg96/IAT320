@@ -61,21 +61,21 @@ void loop() {
 
   if (CircuitPlayground.readCap(0) > 800 && light == true) {
     //playtone
-    for (int j = 0; j < 10; j++) {
-     
-      if (j % 2 == 0) {
-        for (int k = 0; k < 10; k++) {
-          CircuitPlayground.setPixelColor(j, 255, 50, 50);
-        }
-      } else {
-        for (int k = 0; k < 10; k++) {
-          CircuitPlayground.setPixelColor(j, 55, 50, 250);
+
+    for (int i = 0; i < 7; i++) {
+      CircuitPlayground.playTone(mario[i], 150);
+      if (i == 0) {
+        for (int j = 0; j < 10; j++) {
+          if (j % 2 == 0) {
+            CircuitPlayground.setPixelColor(j, 255, 0, 0);
+          }else{
+            CircuitPlayground.setPixelColor(j, 0, 0, 255);
+          }
         }
       }
     }
 
-
+    light = true;
   }
   delay(100);
-
 }
