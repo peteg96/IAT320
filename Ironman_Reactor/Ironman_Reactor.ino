@@ -36,16 +36,7 @@ void loop() {
       y-100;
       
     }
-    //    for (int i = 0; i < 255; i++) {
-    //      for (int j = 0; j < 10; j++) {
-    //        CircuitPlayground.setPixelColor(j, i, i, i);
-    //      }
-    //    }
-    //    while (light = true) {
-    //      for (int j = 0; j < 10; j++) {
-    //        CircuitPlayground.setPixelColor(j, 255, 255, 255);
-    //      }
-    //    }
+   
   } else {
     x=0;
   }
